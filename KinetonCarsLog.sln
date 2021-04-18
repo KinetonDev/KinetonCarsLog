@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Domain", "KinetonCarsLog.Domain\KinetonCarsLog.Domain.csproj", "{B651867A-4802-4268-8C2F-E9157F6E2792}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Domain", "Src\Core\KinetonCarsLog.Domain\KinetonCarsLog.Domain.csproj", "{B651867A-4802-4268-8C2F-E9157F6E2792}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Application", "KinetonCarsLog.Application\KinetonCarsLog.Application.csproj", "{A2999E66-8044-4086-87A3-272C83C80069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Application", "Src\Core\KinetonCarsLog.Application\KinetonCarsLog.Application.csproj", "{A2999E66-8044-4086-87A3-272C83C80069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.ConsoleApplication", "KinetonCarsLog.ConsoleApplication\KinetonCarsLog.ConsoleApplication.csproj", "{DF6CA403-616C-4F94-B976-1DE8439EE7F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Persistence", "Src\Infrastructure\KinetonCarsLog.Persistence\KinetonCarsLog.Persistence.csproj", "{0360F6CA-F291-4475-B449-D3FC6EE2CC26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Persistence", "KinetonCarsLog.Persistence\KinetonCarsLog.Persistence.csproj", "{0360F6CA-F291-4475-B449-D3FC6EE2CC26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.ConsoleApplication", "Src\Ui\KinetonCarsLog.ConsoleApplication\KinetonCarsLog.ConsoleApplication.csproj", "{E6D42F71-5AD1-48E6-847B-40107B899243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,5 +72,17 @@ Global
 		{0360F6CA-F291-4475-B449-D3FC6EE2CC26}.Release|x64.Build.0 = Release|Any CPU
 		{0360F6CA-F291-4475-B449-D3FC6EE2CC26}.Release|x86.ActiveCfg = Release|Any CPU
 		{0360F6CA-F291-4475-B449-D3FC6EE2CC26}.Release|x86.Build.0 = Release|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Debug|x64.Build.0 = Debug|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Debug|x86.Build.0 = Debug|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x64.ActiveCfg = Release|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x64.Build.0 = Release|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x86.ActiveCfg = Release|Any CPU
+		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
