@@ -1,24 +1,33 @@
-using System.Collections.Generic;
-using KinetonCarsLog.Domain.Enums;
+﻿using System.Collections.Generic;
+
+#nullable disable
 
 namespace KinetonCarsLog.Domain.Entities
 {
     public class Car
     {
         public int Id { get; set; }
-
-        public Manufacturer Manufacturer { get; set; }
-
-        public CarType CarType { get; set; }
-
-        public Engine Engine { get; set; }
-
-        public Color Color { get; set; }
-
+        
+        public int ManufacturerId { get; set; }
+        
+        public int CarTypeId { get; set; }
+        
+        public int EngineId { get; set; }
+        
+        public int ColorId { get; set; }
+        
         public string Model { get; set; }
-
+        
         public int SeatCount { get; set; }
 
-        public List<ReportCar> Reports { get; set; }
+        public virtual CarType CarType { get; set; }
+        
+        public virtual CarColor Color { get; set; }
+        
+        public virtual Engine Engine { get; set; }
+        
+        public virtual Manufacturer Manufacturer { get; set; }
+        
+        public virtual List<ReportsCar> ReportsCars { get; set; }
     }
 }
