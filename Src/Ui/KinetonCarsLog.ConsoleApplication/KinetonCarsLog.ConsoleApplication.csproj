@@ -5,4 +5,9 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\Core\KinetonCarsLog.Application\KinetonCarsLog.Application.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\KinetonCarsLog.Persistence\KinetonCarsLog.Persistence.csproj" />
+    </ItemGroup>
+
 </Project>
