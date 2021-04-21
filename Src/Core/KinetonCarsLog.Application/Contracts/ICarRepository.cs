@@ -1,7 +1,6 @@
-using KinetonCarsLog.Application.Contracts;
 using KinetonCarsLog.Domain.Entities;
 
-namespace KinetonCarsLog.Persistence.Repositories.Interfaces
+namespace KinetonCarsLog.Application.Contracts
 {
     public interface ICarRepository : IAsyncRepository<Car>
     {
