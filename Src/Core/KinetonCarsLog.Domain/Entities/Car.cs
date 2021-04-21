@@ -4,7 +4,7 @@
 
 namespace KinetonCarsLog.Domain.Entities
 {
-    public class Car : Entity<int>
+    public class Car : Entity
     {
         public int ManufacturerId { get; set; }
         

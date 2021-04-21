@@ -4,7 +4,7 @@
 
 namespace KinetonCarsLog.Domain.Entities
 {
-    public class CarColor : Entity<int>
+    public class CarColor : Entity
     {
         public string ColorName { get; set; }
 

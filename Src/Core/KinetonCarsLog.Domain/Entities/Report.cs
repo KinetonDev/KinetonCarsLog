@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace KinetonCarsLog.Domain.Entities
 {
-    public class Report : Entity<int>
+    public class Report : Entity
     {
         public DateTime CreatedUtc { get; set; }
 
