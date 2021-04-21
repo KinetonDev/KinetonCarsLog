@@ -193,13 +193,13 @@ namespace KinetonCarsLog.Persistence.DbContext
                 entity.HasOne(d => d.Car)
                     .WithMany(p => p.ReportsCars)
                     .HasForeignKey(d => d.CarId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__Reports_C__car_i__403A8C7D");
 
                 entity.HasOne(d => d.Report)
                     .WithMany(p => p.ReportsCars)
                     .HasForeignKey(d => d.ReportId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__Reports_C__repor__3F466844");
             });
 
