@@ -4,10 +4,8 @@
 
 namespace KinetonCarsLog.Domain.Entities
 {
-    public class CarColor
+    public class CarColor : Entity
     {
-        public int Id { get; set; }
-        
         public string ColorName { get; set; }
 
         public virtual List<Car> Cars { get; set; }
