@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
-namespace KinetonCarsLog.Persistence.DbContext
+namespace KinetonCarsLog.Persistence.DatabaseContext
 {
-    public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class AppDbContext : DbContext
     {
         public AppDbContext()
         {
