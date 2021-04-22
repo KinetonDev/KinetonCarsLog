@@ -1,7 +1,7 @@
+using KinetonCarsLog.Application.Contracts;
 using KinetonCarsLog.Domain.Entities;
 using KinetonCarsLog.Persistence.DatabaseContext;
 using KinetonCarsLog.Persistence.Repositories.Base;
-using KinetonCarsLog.Persistence.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace KinetonCarsLog.Persistence.Repositories
