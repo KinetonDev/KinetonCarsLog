@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Persistence"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.ConsoleApplication", "Src\Ui\KinetonCarsLog.ConsoleApplication\KinetonCarsLog.ConsoleApplication.csproj", "{E6D42F71-5AD1-48E6-847B-40107B899243}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinetonCarsLog.Application.UnitTests", "Tests\KinetonCarsLog.Application.UnitTests\KinetonCarsLog.Application.UnitTests.csproj", "{9A21C1E6-992C-4941-8501-C4066FFBB604}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,17 @@ Global
 		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x64.Build.0 = Release|Any CPU
 		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x86.ActiveCfg = Release|Any CPU
 		{E6D42F71-5AD1-48E6-847B-40107B899243}.Release|x86.Build.0 = Release|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Debug|x64.Build.0 = Debug|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Debug|x86.Build.0 = Debug|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Release|x64.ActiveCfg = Release|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Release|x64.Build.0 = Release|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A21C1E6-992C-4941-8501-C4066FFBB604}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
