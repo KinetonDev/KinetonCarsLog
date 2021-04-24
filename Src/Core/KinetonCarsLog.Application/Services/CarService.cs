@@ -9,7 +9,7 @@ using KinetonCarsLog.Domain.Entities;
 
 namespace KinetonCarsLog.Application.Services
 {
-    public class CarService : ICarService
+    public class CarService : ICarService, IDisposable, IAsyncDisposable
     {
         private readonly IUnitOfWork _unitOfWork;
         
@@ -76,6 +76,16 @@ namespace KinetonCarsLog.Application.Services
             await _unitOfWork.SaveChangesAsync();
             
             return true;
+        }
+
+        public void Dispose()
+        {
+            _unitOfWork.Dispose();
+        }
+
+        public async ValueTask DisposeAsync()
+        {
+            await _unitOfWork.DisposeAsync();
         }
     }
 }
