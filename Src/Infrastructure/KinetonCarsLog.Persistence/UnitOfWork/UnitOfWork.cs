@@ -9,15 +9,30 @@ namespace KinetonCarsLog.Persistence.UnitOfWork
     public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _appDbContext;
+        private ICarRepository _cars;
+        private IReportRepository _reports;
+        private ICarColorRepository _carColors;
+        private IManufacturerRepository _manufacturers;
+        private ICarTypeRepository _carTypes;
+        private IFuelTypeRepository _fuelTypes;
         
         public UnitOfWork(AppDbContext context)
         {
             _appDbContext = context;
-            Cars = new CarRepository(context);
         }
+
+        public ICarRepository Cars => _cars ??= new CarRepository(_appDbContext);
         
-        public ICarRepository Cars { get; private set; }
+        public IReportRepository Reports => _reports ??= new ReportRepository(_appDbContext);
         
+        public ICarColorRepository CarColors => _carColors ??= new CarColorRepository(_appDbContext);
+        
+        public IManufacturerRepository Manufacturers => _manufacturers ??= new ManufacturerRepository(_appDbContext);
+        
+        public ICarTypeRepository CarTypes => _carTypes ??= new CarTypeRepository(_appDbContext);
+        
+        public IFuelTypeRepository FuelTypes => _fuelTypes ??= new FuelTypeRepository(_appDbContext);
+
         public async Task<int> SaveChangesAsync()
         {
             return await SaveChangesAsync(CancellationToken.None);
