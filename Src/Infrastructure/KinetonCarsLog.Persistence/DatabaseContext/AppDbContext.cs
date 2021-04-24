@@ -21,7 +21,7 @@ namespace KinetonCarsLog.Persistence.DatabaseContext
         public virtual DbSet<CarColor> CarColors { get; set; }
         
         public virtual DbSet<CarType> CarTypes { get; set; }
-        
+
         public virtual DbSet<Engine> Engines { get; set; }
         
         public virtual DbSet<FuelType> FuelTypes { get; set; }
@@ -30,7 +30,7 @@ namespace KinetonCarsLog.Persistence.DatabaseContext
         
         public virtual DbSet<Report> Reports { get; set; }
         
-        public virtual DbSet<ReportsCar> ReportsCars { get; set; }
+        public virtual DbSet<ReportsCars> ReportsCars { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -177,7 +177,7 @@ namespace KinetonCarsLog.Persistence.DatabaseContext
                     .HasColumnName("created_UTC");
             });
 
-            modelBuilder.Entity<ReportsCar>(entity =>
+            modelBuilder.Entity<ReportsCars>(entity =>
             {
                 entity.HasKey(e => new { e.ReportId, e.CarId })
                     .HasName("PK__Reports___5352DC836E50B92A");

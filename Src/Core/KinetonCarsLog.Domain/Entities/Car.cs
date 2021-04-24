@@ -26,6 +26,6 @@ namespace KinetonCarsLog.Domain.Entities
         
         public virtual Manufacturer Manufacturer { get; set; }
         
-        public virtual List<ReportsCar> ReportsCars { get; set; }
+        public virtual List<ReportsCars> ReportsCars { get; set; }
     }
 }

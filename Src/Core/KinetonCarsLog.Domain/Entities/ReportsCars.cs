@@ -2,7 +2,7 @@
 
 namespace KinetonCarsLog.Domain.Entities
 {
-    public class ReportsCar
+    public class ReportsCars
     {
         public int ReportId { get; set; }
         

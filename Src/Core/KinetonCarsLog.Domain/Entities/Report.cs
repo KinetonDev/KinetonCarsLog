@@ -9,6 +9,6 @@ namespace KinetonCarsLog.Domain.Entities
     {
         public DateTime CreatedUtc { get; set; }
 
-        public virtual List<ReportsCar> ReportsCars { get; set; }
+        public virtual List<ReportsCars> ReportsCars { get; set; }
     }
 }
