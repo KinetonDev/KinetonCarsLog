@@ -24,6 +24,11 @@ namespace KinetonCarsLog.Application.Services
         
         public async Task<IEnumerable<Report>> GetCarsByLastDaysAsync(int countOfDays)
         {
+            if (countOfDays < 0)
+            {
+                throw new ArgumentException( "Can't be less than 0", nameof(countOfDays));
+            }
+            
             var previousDate = DateTime.UtcNow.AddDays(-countOfDays);
 
             return await _unitOfWork.Reports.GetReportsLaterThanDate(previousDate);
