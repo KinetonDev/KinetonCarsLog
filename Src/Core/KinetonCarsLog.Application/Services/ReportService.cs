@@ -9,18 +9,24 @@ using KinetonCarsLog.Domain.Entities;
 
 namespace KinetonCarsLog.Application.Services
 {
-    public class CarService : ICarService, IDisposable, IAsyncDisposable
+    public class ReportService : IReportService, IDisposable, IAsyncDisposable
     {
         private readonly IUnitOfWork _unitOfWork;
-        
-        public CarService(IUnitOfWork unitOfWork)
+        private readonly IDateTimeService _dateTimeService;
+
+        public ReportService(
+            IUnitOfWork unitOfWork,
+            IDateTimeService dateTimeService)
         {
             _unitOfWork = unitOfWork;
+            _dateTimeService = dateTimeService;
         }
         
-        public async Task<IEnumerable<Car>> GetAllCarsAsync()
+        public async Task<IEnumerable<Report>> GetCarsByLastDaysAsync(int countOfDays)
         {
-            return await _unitOfWork.Cars.GetAllAsync();
+            var previousDate = DateTime.UtcNow.AddDays(-countOfDays);
+
+            return await _unitOfWork.Reports.GetReportsLaterThanDate(previousDate);
         }
 
         public async Task<bool> ReportCarsAsync(List<CarRecord> carRecords)

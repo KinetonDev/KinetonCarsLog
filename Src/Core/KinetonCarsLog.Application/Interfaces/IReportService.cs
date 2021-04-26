@@ -6,9 +6,9 @@ using KinetonCarsLog.Domain.Entities;
 
 namespace KinetonCarsLog.Application.Interfaces
 {
-    public interface ICarService
+    public interface IReportService
     {
-        Task<IEnumerable<Car>> GetAllCarsAsync();
+        Task<IEnumerable<Report>> GetCarsByLastDaysAsync(int countOfDays);
 
         Task<bool> ReportCarsAsync(List<CarRecord> car);
     }
